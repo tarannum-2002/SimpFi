@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #252524;
+}
+
+button {
+  color: #fff;
+  background-color: #eb5e24;
+  height: 3.5em;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 0.3em;
+  margin: 0 0 5em 15%;
+}
+
+.start {
+  background-color: #eb5e24;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7em 3em;
+  border: none;
+  border-radius: 0.3em;
+  margin: 0 0 5em 15%;
+}
+
+.content {
+  background-color: #fff;
+  height: 80vh;
+  width: 100%;
+  display: block;
+  color: #252524;
+  padding: 6em;
+}
+
+.content h2 {
+  background-color: #fff;
+  text-align: center;
+  font-size: 2em;
+}
+
+.content p {
+  padding: 3em;
+  background-color: #fff;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.content1 {
+  color: #fff;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+}
+
+.features li {
+  margin: 6em 2em;
+  text-align: center;
+}
+
+footer {
+  background-color: #eb5e24;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left h1 {
+  color: fff;
+  background-color: #eb5e24;
+  padding: 2em 4em;
+  line-height: 2em;
+  font-size: 2.5em;
+}
+
+.footer-left,
+.footer-right {
+  color: fff;
+  background-color: #eb5e24;
+}
+
+.footer-right h1 {
+  color: fff;
+  font-size: 1em;
+  background-color: #eb5e24;
+  padding: 5em 4em 0;
+  line-height: 2em;
+}
+
+.footer-right .icon {
+  display: flex;
+  margin: 0 1em 1em;
+}
+
+.address,
+.email {
+  color: fff;
+  background-color: #eb5e24;
+  padding: 2em;
+}
+
+.address b,
+.email b {
+  color: fff;
+  background-color: #eb5e24;
+  padding: 2em;
+}
+
+.footer-right .icon div {
+  color: fff;
+  background-color: #eb5e24;
+  padding: 2em;
+}
+
+.logo {
+  padding: 1em 3em;
+  color: #eb5e24;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.signup-title {
+  background-color: #fff;
+  margin: 0 auto 1em;
+}
+
+.leftoverlay-title {
+  background-color: #eb5e24;
+}
+
+.login-button {
+  margin: 2em auto;
+}
+
+.piechart {
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.icon {
+  background-color: #eb5e24;
+}
+
+.profile-title {
+  text-align: center;
+  color: #fff;
+  padding: 1em 1em 2em;
+}
+
+.user-details {
+  background-color: #edede9;
+  height: 65%;
+  width: 75%;
+  margin: 0 auto 2em;
+  border-radius: 0.3em;
+  padding: 3em 4em;
+}

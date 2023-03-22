@@ -1,0 +1,55 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>EnterDetails</h1>
+		<form id="details-form">
+			<input type="text" autocomplete="off" id="username" placeholder="Username" />
+			<input type="number" autocomplete="off" id="money" placeholder="MoneySpent" />
+            <input type="String" autocomplete="off" id="Description" placeholder="ENter Description" />
+			<!-- <input type="image" autocomplete="off" id="Image" placeholder="Image" /> -->
+             
+			<input type="submit" value="Submit Form" />
+		</form>
+
+		<script>
+			const form = document.getElementById('details-form')
+			form.addEventListener('submit', DetailInput)
+
+			async function DetailInput(event) {
+				event.preventDefault()
+				const username = document.getElementById('username').value
+                const MoneySpent = document.getElementById('money').value
+                const Description = document.getElementById('Description').value
+                // const image = document.getElementById('image').value
+
+
+				
+
+				const result = await fetch('/api/EnterDetails', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						username,
+                        MoneySpent,
+                        Description,
+                        // image
+
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					// everythign went fine
+					alert('Success')
+				} else {
+					alert(result.error)
+				}
+			}
+		</script>
+	</body>
+</html>

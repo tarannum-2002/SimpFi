@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+.card {
+  background-color: #eb5e24;
+  border-radius: 10px;
+  padding: 5% 0;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 50%;
+  margin: 13% auto; /* Center the card horizontally */
+  width: 60%; /* Set the width of the card */
+}
+.card p {
+  color: white;
+  line-height: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
